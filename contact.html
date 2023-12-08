@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact | Nursery Horrors</title>
+    <link rel="stylesheet" type="text/css" href="contactstyle.css">
+	<script src="https://kit.fontawesome.com/1ce53593c1.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+	<div class="topnav">
+        <img src="logobar.png" alt="websitelogo" class="logo" height="50px" id="logo-image">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const logoImage = document.getElementById('logo-image');
+            
+                logoImage.addEventListener('click', function() {
+                    window.location.href = 'index.html'; 
+                });
+            });
+        </script>
+            
+        <a class="active" href="contact.html">Contact</a>
+		<a href="home.html">Home</a>
+	</div> 
+
+    <div id="master-div">
+        <div class="masterimage">
+        </div>
+		<div id="title">
+        <font color="#f80707">
+        <center>Contact Us</center>
+        </font>
+        </div>
+		<div id="textdiv">
+            <font color="#FFFFFF">
+            <center>Meet the people rediscovering your favourite nursery rhymes</center>
+            </font>
+        </div>
+    </div>
+
+    <div class="contactcontainer">
+        <div class="form">
+            <div class="contactinfo">
+                <h3 class="infotitle">Let's Talk Rhymes</h3>
+                <p class="infotext">
+                    Have questions or spooky tales to share? We're here to help! Your thoughts matter, and we'll respond promptly. Get in touch and let the nursery horrors unfold! 
+                </p>
+                <p><i class="fa-solid fa-location-dot"></i>   419A Windsor Rd, Baulkham Hills NSW 2153</p>
+                <p><i class="fa-solid fa-envelope"></i>   NurseryHorrors@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>   +61 486 691 156</p>
+                <p></p>
+                <div style="margin-left: 1.5rem;">
+                    Also, we would love for you to fill out <span style="cursor: pointer; color: blue; text-decoration: underline;" onclick="window.location.href='https://forms.gle/bSyzNkS4BcewSgCB8';">this survey</span>, it'll be great to hear your thoughts!
+                  </div>
+                              </div>
+            <div class="contactform">
+                <form action="#" onsubmit="return validateForm(this)">
+                    <h3 class="formtitle">Contact Us</h3>
+                    <div class="inputc">
+                        <input type="text" name="name" class="input" required>
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="inputc">
+                        <input type="email" name="email" class="input" required>
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputc">
+                        <input type="tel" name="phone" class="input" required>
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="inputc textarea">
+                        <textarea name="message" class="input" required></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn">
+                    <div class="confirmation-container" id="confirmation-container">
+                        <div class="confirmation-message" id="confirmation-message">
+                            Thank you! Your message has been sent.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function validateForm(form) {
+            var name = form.name.value;
+            var email = form.email.value;
+            var phone = form.phone.value;
+            var message = form.message.value;
+            var confirmationContainer = document.getElementById('confirmation-container');
+            var confirmationMessage = document.getElementById('confirmation-message');
+
+            if (name === "" || email === "" || phone === "" || message === "") {
+                alert("All fields are required.");
+                return false;
+            }
+            confirmationContainer.classList.add('show');
+            confirmationMessage.classList.add('show');
+            return false;
+        }
+    </script>
+    <script src="idk.js"></script>
+</body>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <title>Home | Nursery Horrors</title>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+	<script src="https://kit.fontawesome.com/1ce53593c1.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+	<div class="topnav">
+        <img src="logobar.png" alt="websitelogo" class="logo" height="50px" id="logo-image">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const logoImage = document.getElementById('logo-image');
+            
+                logoImage.addEventListener('click', function() {
+                    window.location.href = 'index.html'; 
+                });
+            });
+        </script>
+            
+        <a class="active" href="contact.html">Contact</a>
+		<a href="home.html">Home</a>
+	</div> 
+
+    <div id="master-div">
+        <div class="masterimage">
+        </div>
+		<div id="title">
+        <font color="#f80707">
+        <center>Nursery Horrors</center>
+        </font>
+        </div>
+		<div id="textdiv">
+            <font color="#FFFFFF">
+            <center>Discover the darkness buried within your favourite nursery rhymes</center>
+            </font>
+        </div>
+    </div>
+<div id="popularstories">
+    <section class="stories">
+        <h1>Most Popular Tales</h1>
+        <p>Dive into our most chilling Nursery Rhymes</p>
+        <div class="row">
+        <a href="roses.html">
+            <div class="column1">
+                <img src="ringoroses.png">
+                <div class="layer">
+                    <h3>Ring a Ring o' Rosies</h3>
+                </div>
+            </div>
+        </a>
+        <a href="rockabye.html">
+            <div class="column1">
+                <img src="rockabye.png">
+                <div class="layer">
+                    <h3>Rockabye Baby</h3>
+                </div>
+            </div>
+        </a>    
+        <a href="sheep.html">
+            <div class="column1">
+                <img src="blacksheep.png">
+                <div class="layer">
+                    <h3>Baa Baa Black Sheep</h3>
+                </div>
+            </div>
+        </a>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>Never Miss a Chilling Nursery Rhyme</h1>
+        <div class="box">
+            <form id="subscription-form" action="#">
+                <div class="form-box">
+                    <input class="email-input" type="email" name="email" placeholder="Enter your email address">
+                    <button class="subscribe-button" type="submit" id="subscribe-button">Subscribe</button>
+                </div>
+            </form>
+            <div class="confirmation-message" id="confirmation-message">
+                Thank you for subscribing!
+            </div>
+        </div>
+    </section>
+    
+
+<footer>
+<div class="footerc">
+    <div class="socialmedia">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://reddit.com"><i class="fa-brands fa-reddit"></i></a>
+        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="footersites">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("subscription-form");
+        const subscribeButton = document.getElementById("subscribe-button");
+        const confirmationMessage = document.getElementById("confirmation-message");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the actual form submission
+            subscribeButton.style.display = "none";
+            confirmationMessage.style.display = "block";
+        });
+    });
+</script>
+</body>

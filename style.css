@@ -1,0 +1,328 @@
+/* Reset default margin and padding for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Style the navigation bar */
+.topnav {
+    position: fixed;
+    top: 8;
+    width: 100%;
+    z-index: 1; 
+	text-align: center;
+	padding: 0px;
+	margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color:rgba(0,0,0,0.7);
+}
+.topnav a {
+	float:right; 
+    text-decoration: none;
+    background-color: #f80707;
+    border-color: #FFFFFF;
+    border-radius: 10px;
+    min-width: 110px;
+    font-size: 17px;
+    font-family: 'scaryfontbody', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 3px 10px; /* Adjust padding for better spacing */
+    margin: 8px 10px; /* Adjust margin for better spacing */
+    display: inline-block; /* Use inline-block to make them appear inline */
+}
+.topnav a:hover{
+	background-color:#FFFFFF;
+	color:black;	
+}
+
+.topnav a:active{
+	color:white;
+	
+}
+
+.logo {
+	float:left;
+	
+}
+/* Make the master div cover the entire page. flexbox is for centering vertically, align-items centres horizontally */
+#master-div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    background-image: url('fairytalebookwall.png');
+    background-size: cover;
+	z-index:-1;
+}
+
+/* custom fonts for landing page */
+@font-face {
+    font-family: 'scaryfonttitle';
+    src: url('landinghead.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'scaryfontbody';
+    src: url('ANUNEDW_.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'crimsontext';
+    src: url('CrimsonText-Regular.ttf') format('truetype');
+}
+
+
+
+#title {
+    font-family: 'scaryfonttitle', sans-serif;
+    font-size: 2.6rem;
+    position: relative;
+	padding: 1%;
+	text-shadow: 2px 2px rgba(0,0,0,0.7);
+}
+
+#textdiv {
+    font-family: 'crimsontext', sans-serif;
+    font-size: 29px;
+    position: relative;
+	padding:1%; 
+	text-shadow: 2px 2px rgba(0,0,0,0.7);
+
+}
+
+#button {
+    position: relative;
+	padding:1%;
+}
+
+.button {
+    background-color: #f80707;
+    border: 2px solid #FFFFFF; /* Add a border with the desired color */
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 4px;
+    min-width: 120px;
+    font-size: 17px;
+    font-family: 'scaryfontbody';
+    text-decoration: none; /* Remove underlines */
+    display: inline-block; /* Make it a block-level element for padding */
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #e31e1e;
+    border-color: #FFFFFF; /* Maintain the border color on hover */
+    transition: 0.1s;
+}
+
+
+#reviews {
+	display:flex;
+	justify-content: center; 
+	align-items: center;
+	flex-direction: center;
+	flex-direction: column;
+	width:100%;
+	background-color: #121212;
+	color:white;
+}
+
+#reviewtitle {
+	margin-top: 30px;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column; 
+	justify-content: center; 
+	align-items:center; 
+	font-family: 'scaryfonttitle';
+	font-weight: 1300; 
+	color: #f80707;
+	font-size: 11px;
+	text-shadow: 2px 2px rgba(0,0,0,0.7);
+
+}
+
+#reviewsubheading {
+	margin-top: -20px;
+	margin-bottom: 16px;
+	color:white;
+	font-size: 1.4rem;
+}
+
+
+.reviewbox {
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width:100%;
+}
+
+.review-box {
+	width:500px;
+	border: solid; 
+	border-width:1px; 
+	border-color:gray; 
+	padding:20px;
+	margin:15px;
+	cursor:pointer;
+	background-color:#1d1d1d;
+	border-radius: 7px; 
+}
+
+.pfp {
+	width:50px; 
+	height:50px;
+	border-radius:50%;
+	overflow:hidden;
+	margin-right:10px;
+}
+
+.pfp img{
+	width:100%;
+	height:100%;
+    object-fit: cover;
+	margin:auto;
+}
+
+
+.nameguy {
+	display:flex;
+	flex-direction:column;
+	
+}
+
+.nameguy strong {
+	font-size: 1.2rem;
+	margin-bottom: 2px;
+}
+
+.nameguy span {
+	font-size: 1rem;
+}
+
+.person {
+	display: flex;
+	align-items:center;
+}
+
+.stars {
+	color: yellow;
+	padding-top: 10px; 
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+
+}
+
+.review-box:hover{
+	transform: translateY(-8px);
+	transition: all ease 0.3s;
+}
+
+#page2 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: row;
+    width: 100%;
+    background-color: #121212;
+    padding-top: 100px;
+    padding-bottom: 27px;
+}
+
+.textbox {
+    width: 38%;
+    min-height: 30%;
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: #1d1d1d;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.boxheading {
+    font-family: scaryfonttitle;
+    color: red;
+    font-size: 1.7vw;
+    padding: 1%;
+}
+
+.boxbodytext {
+    font-family: crimsontext;
+    color: white;
+    padding: 20px 10px 15px;
+    text-align: right;
+    font-size: 1.4vw;
+}
+
+.imagesmall {
+    transform: scaleX(-1);
+}
+
+.imagesmall img {
+    border-radius: 20px;
+	margin-right: 40px; 
+	margin-top: 70%;
+}
+
+.imagebig img {
+    border-radius: 50px;
+    padding: 8%;
+}
+#footer {
+    background-color: #282c2f; /* Set the background color of the footer */
+	width:100%; 
+	height:140px;
+	margin-top: 150px; 
+	padding: 80px 15%;
+	color: #ffffff;
+	display: flex;
+	font-family: crimsontext; 
+}
+
+.col-1 {
+	text-align:center;
+	font-size: 22px;
+	margin-top:-40px;
+}
+.col-2 {
+	flex-grow: 2;
+	text-align:center;
+	margin-top:-40px;
+
+}
+
+.col-3 {
+	font-size: 18px;
+	max-width: 30%;
+	margin-top:-40px;
+}
+
+#footer div h3{
+	font-weight: 300;
+	margin-bottom:30px;
+	letter-spacing: 1px;
+}
+
+.col-1 a{
+	display:block;
+	text-decoration: none; 
+	color: white;
+	margin-bottom: 10px; 
+}
+
+.social-icons i{
+	font-size: 24px; 
+	letter-spacing: 12px;
+	text-decoration: none;
+	color: white; 
+	text-align:center;
+}

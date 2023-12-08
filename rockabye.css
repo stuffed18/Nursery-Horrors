@@ -1,0 +1,391 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Set the background color to #121212 */
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;}
+
+
+.topnav {
+    position: fixed;
+    top: 8;
+    width: 100%;
+    z-index: 1500; 
+	text-align: center;
+	padding: 0px;
+	margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color:rgba(0,0,0,0.9);
+}
+.topnav a {
+	float:right; 
+    text-decoration: none;
+    background-color: #f80707;
+    border-color: #FFFFFF;
+    border-radius: 10px;
+    min-width: 110px;
+    font-size: 17px;
+    font-family: 'scaryfontbody', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 3px 10px; 
+    margin: 8px 10px; 
+}
+.topnav a:hover{
+	background-color:#FFFFFF;
+	color:black;	
+}
+
+.topnav a:active{
+	color:white;
+}
+
+.logo {
+	float:left;
+}
+#logo-image {
+    cursor: pointer; 
+}
+
+@font-face {
+    font-family: 'scaryfonttitle';
+    src: url('landinghead.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'scaryfontbody';
+    src: url('ANUNEDW_.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'crimsontext';
+    src: url('CrimsonText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bodytext';
+    src: url('HalenoirCompactText-Light.otf') format('truetype');
+}
+
+
+#title {
+    font-family: 'scaryfonttitle', sans-serif;
+    font-size: 3.25rem;
+    position: relative;
+	padding: 1%;
+	text-shadow: 2px 2px rgba(0,0,0,1);
+}
+
+#textdiv {
+    font-family: 'crimsontext', sans-serif;
+    font-size: 29px;
+    position: relative;
+	padding:1%; 
+	text-shadow: 2px 2px rgba(0,0,0,0.7);
+
+}
+
+#button {
+    position: relative;
+	padding:1%;
+}
+
+.button {
+    background-color: #f80707;
+    border-color: #FFFFFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 4px;
+	min-width: 120px;
+    font-size: 17px;
+	font-family: 'scaryfontbody';
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #e31e1e;
+    transition: 0.1s;
+}
+
+
+#master-div{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    background-image: url('babyimage.png');
+    position: relative; /* Add this for a new stacking thing */
+    background-size: cover;
+	z-index:-1;
+}
+
+#master-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.websitebackground {
+    background-color:#121212;
+}
+
+.video {
+    width: 100%;
+    margin-left: 22.5%;
+    margin-top: 10%;
+    background-color: #121212; /* Add this line to set the background color */
+}
+
+
+
+.person-box {
+    background-color: #121212;
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.nameguy {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameguy strong {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+
+.nameguy span {
+    font-size: 1rem;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.read-time, .post-date {
+    font-size: 0.9rem;
+}
+
+.information {
+    margin-top:7%;
+    color:white;
+}
+
+.information h2 {
+    font-family: 'scaryfonttitle', sans-serif;
+    text-align:center;
+    color:white;
+}
+
+.content {
+    width:100%;
+    font-family:'bodytext'
+}
+
+.contentwrapper {
+    
+    width:50%;
+    margin:auto;
+    display:flex;
+}
+
+.maincontent {
+    flex:3;
+}
+
+.maincontent p {
+    margin-top:30px;
+    margin-bottom:30px;
+    line-height:25px;
+    font-size:1.05rem;
+
+}
+
+.maincontent h3 {
+
+}
+
+.marquee-container {
+    width: 100%;
+    height: 10vh; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee img {
+    height: 100%; /* Adjust the height as needed */
+    margin-right: 20px; /* Adjust the spacing between images */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.relatedchild {
+    margin-top:30px;
+    display:flex;
+    align-items:center;
+
+}
+
+.relatedchild h3 {
+    margin:0;
+}
+
+.relatedchild p {
+    margin:0 0 5 0;
+    line-height:30px;
+}
+
+.related a {
+    text-decoration:none;
+}
+
+.relatedleft, .relatedright {
+    flex:1;
+}
+
+.custom-component {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+
+.custom-component a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-component img {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.custom-component p {
+    margin: 5px 0;
+}
+
+.custom-component .custom-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-component .custom-text p {
+    margin: 5px 0;
+}
+
+.relatedchild h4 {
+    margin: 0;
+}
+
+
+
+.footerc {
+    padding:70px 30px 20px;    
+    background-color:#08090a;
+    margin-top:4%;
+}
+
+.socialmedia {
+    display:flex;
+    justify-content:center;
+}
+
+.socialmedia a{
+    text-decoration:none;
+    padding:10px;
+    background-color:white;
+    margin:10px;
+    border-radius:50%;
+}
+
+.socialmedia a i {
+    font-size: 2rem;
+    color:black;
+    opacity:0.9;
+}
+
+.socialmedia a:hover {
+    background-color:black;
+}
+
+.socialmedia a:hover i {
+    color:white;
+    transition:0.5s;
+}
+
+.footersites ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footersites ul li {
+    margin: 0;
+}
+
+.footersites ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.footersites ul li {
+    margin: 15px 15px;
+}
+
